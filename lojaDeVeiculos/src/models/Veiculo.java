@@ -1,18 +1,21 @@
 package models;
 
-public class Veiculo {
+public abstract class Veiculo implements venda {
     private String nome;
     private int anoFabricacao;
     private String cor;
     private double precoCompra;
     private int estoque;
 
-    public Veiculo(String nome, int anoFabricacao, String cor, double precoCompra, int estoque) {
+    private String tipoDeVeiculo;
+
+    public Veiculo(String nome, int anoFabricacao, String cor, double precoCompra, int estoque, String tipoDeVeiculo) {
         this.nome = nome;
         this.anoFabricacao = anoFabricacao;
         this.cor = cor;
         this.precoCompra = precoCompra;
         this.estoque = estoque;
+        this.tipoDeVeiculo = tipoDeVeiculo;
     }
 
     public String getNome() {
@@ -54,4 +57,14 @@ public class Veiculo {
     public void setEstoque(int estoque) {
         this.estoque = estoque;
     }
+
+    public String getTipoDeVeiculo() {
+        return tipoDeVeiculo;
+    }
+
+    public void setTipoDeVeiculo(String tipoDeVeiculo) {
+        this.tipoDeVeiculo = tipoDeVeiculo;
+    }
+
+    public abstract double calculaPrecoVenda();
 }

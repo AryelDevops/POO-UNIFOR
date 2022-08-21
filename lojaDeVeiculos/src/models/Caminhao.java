@@ -1,10 +1,12 @@
 package models;
 
-public class Caminhao extends Veiculo{
+public class Caminhao extends Veiculo {
+    private static final String tipoDeVeiculo = "caminhao";
     private double cargaSuportada;
 
-    public Caminhao(String nome, int anoFabricacao, String cor, double precoCompra, int estoque) {
-        super(nome, anoFabricacao, cor, precoCompra, estoque);
+    public Caminhao(String nome, int anoFabricacao, String cor, double cargaSuportada, double precoCompra, int estoque) {
+        super(nome, anoFabricacao, cor, precoCompra, estoque, tipoDeVeiculo);
+        this.cargaSuportada = cargaSuportada;
     }
 
     public double getCargaSuportada() {
@@ -15,7 +17,8 @@ public class Caminhao extends Veiculo{
         this.cargaSuportada = cargaSuportada;
     }
 
-    public double getPrecoCaminhao() {
+    @Override
+    public double calculaPrecoVenda() {
         double precoVenda;
         if((getCargaSuportada() >= 3000)) {
             precoVenda = getPrecoCompra() * 1.07;
