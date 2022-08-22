@@ -15,7 +15,8 @@ public class LojaDeVeiculos {
         Quadriciclo quadriciclo = new Quadriciclo("Honda", 2020, "branco", 18000, 50, "4x4");
         Quadriciclo quadriciclo2 = new Quadriciclo("Honda", 2020, "branco", 18000, 50, "4x2");
 
-        Seguro seguro = new Seguro("1", moto);
+        Seguro seguro = new Seguro("1", quadriciclo);
+        Seguro seguro2 = new Seguro("2", quadriciclo2);
 
 
 //        System.out.println(repostaInferior);
@@ -24,7 +25,7 @@ public class LojaDeVeiculos {
 //        System.out.println(moto2.calculaPrecoVenda());
 //        System.out.println("O preço de venda do Quadriciclo é: "+ quadriciclo.calculaPrecoVenda());
 //        System.out.println("O preço de venda do Quadriciclo2 é: "+ quadriciclo.calculaPrecoVenda());
-        System.out.println("O preço de venda do seguroCarro2 é: "+ seguro.calculaPrecoVenda());
-
+        System.out.println("O preço de venda do seguromoto é: "+ seguro.calculaPrecoVenda());
+        System.out.println("O preço de venda do seguromoto2 é: "+ seguro2.calculaPrecoVenda());
     }
 }

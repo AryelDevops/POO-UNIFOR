@@ -26,6 +26,7 @@ public class Seguro implements venda {
     public double calculaPrecoVenda() {
         double precoDeVenda = getPrecoVendaDoVeiculo();
         String tipoDeVeiculoAssociado = getTipoDeVeiculoAssociado();
+        System.out.println(tipoDeVeiculoAssociado);
         String tipoDeSeguro = getTipoDeSeguro();
 
         double precoDoSeguro = 0;

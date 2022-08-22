@@ -17,10 +17,6 @@ public class Carro extends Veiculo {
         this.modeloCarro = modeloCarro;
     }
 
-    public String getTipoDeVeiculo() {
-        return tipoDeVeiculo;
-    }
-
     @Override
     public double calculaPrecoVenda() {
         double precoVenda;

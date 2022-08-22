@@ -4,16 +4,16 @@ public class Quadriciclo extends Veiculo {
     private static final String tipoDeVeiculo = "quadriciclo";
     private String tracaoDasRodas;
 
+    public Quadriciclo(String nome, int anoFabricacao, String cor, double precoCompra, int estoque, String tracaoDasRodas) {
+        super(nome, anoFabricacao, cor, precoCompra, estoque, tipoDeVeiculo);
+        this.tracaoDasRodas = tracaoDasRodas;
+    }
+
     public String getTracaoDasRodas() {
         return tracaoDasRodas;
     }
 
     public void setTracaoDasRodas(String tracaoDasRodas) {
-        this.tracaoDasRodas = tracaoDasRodas;
-    }
-
-    public Quadriciclo(String nome, int anoFabricacao, String cor, double precoCompra, int estoque, String tracaoDasRodas) {
-        super(nome, anoFabricacao, cor, precoCompra, estoque, tipoDeVeiculo);
         this.tracaoDasRodas = tracaoDasRodas;
     }
 

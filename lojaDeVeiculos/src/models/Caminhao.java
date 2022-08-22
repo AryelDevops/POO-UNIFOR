@@ -20,10 +20,12 @@ public class Caminhao extends Veiculo {
     @Override
     public double calculaPrecoVenda() {
         double precoVenda;
-        if((getCargaSuportada() >= 3000)) {
-            precoVenda = getPrecoCompra() * 1.07;
+        double cargaSuportada = getCargaSuportada();
+        double precoCompra = getPrecoCompra();
+        if((cargaSuportada >= 3000)) {
+            precoVenda = precoCompra * 1.07;
         } else {
-            precoVenda = getPrecoCompra() * 1.05;
+            precoVenda = precoCompra * 1.05;
         }
         return precoVenda;
     }
