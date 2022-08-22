@@ -27,16 +27,23 @@ public class TestaLojaDeVeiculos {
         double precoVendaSeguro = seguro.calculaPrecoVenda();
 
         System.out.println("#### CAMINHAO ####");
-        System.out.println(precoCompraCaminhao);
-        System.out.println(precoVendaCaminhao);
+        System.out.println("O preco de compra é: " + precoCompraCaminhao);
+        System.out.println("O preco de venda é: " + precoVendaCaminhao);
+
         System.out.println("#### CARRO ####");
-        System.out.println(precoCompraCarro);
-        System.out.println(precoVendaCarro);
+        System.out.println("O preco de compra é: " + precoCompraCarro);
+        System.out.println("O preco de venda é: " + precoVendaCarro);
+
         System.out.println("#### MOTO ####");
-        System.out.println(precoCompraMoto);
-        System.out.println(precoVendaMoto);
+        System.out.println("O preco de compra é: " + precoCompraMoto);
+        System.out.println("O preco de venda é: " + precoVendaMoto);
+
+        System.out.println("#### QUADRICICLO ####");
+        System.out.println("O preco de compra é: " + precoCompraQuadriciclo);
+        System.out.println("O preco de venda é: " + precoVendaQuadriciclo);
+
         System.out.println("#### SEGURO ####");
-        System.out.println(precoVendaSeguro);
+        System.out.println("O preco de venda é: " + precoVendaSeguro);
 
     }
 }
